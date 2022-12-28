@@ -40,6 +40,7 @@ const defaultSidebar: DefaultTheme.Sidebar = [
 ]
 
 export default defineConfig({
+  base: '/mini-anything-docs/',
   title: 'mini-anything',
   description: 'composition api form validator for vue',
   // appearance: false,
