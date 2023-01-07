@@ -1,5 +1,5 @@
 ---
-next: ./vue3/reactivity
+next: ./vue-core/index
 ---
 
 # Getting Started

@@ -23,6 +23,10 @@ const defaultSidebar: DefaultTheme.Sidebar = [
     collapsible: true,
     items: [
       {
+        text: 'vuejs-core',
+        link: '/vue3/index'
+      },
+      {
         text: 'reactivity',
         link: '/vue3/reactivity'
       },
