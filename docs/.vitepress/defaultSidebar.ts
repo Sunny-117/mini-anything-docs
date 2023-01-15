@@ -9,6 +9,20 @@ export const defaultSidebar: DefaultTheme.Sidebar = [
                 text: 'Getting Started',
                 link: '/getting-started',
             },
+            {
+                text: '文档进度',
+                link: '/doc-process',
+            },
+        ],
+    },
+
+    {
+        text: 'NodeJS 工具',
+        items: [
+            {
+                text: '自动重启node应用的工具 nodemon',
+                link: '/nodemon/',
+            },
         ],
     },
     {

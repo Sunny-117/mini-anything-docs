@@ -12,10 +12,11 @@ import { defaultSidebar } from './defaultSidebar'
 export default defineConfig({
   base: '/mini-anything-docs/',
   title: 'mini-anything',
-  description: 'composition api form validator for vue',
+  description: '',
   // appearance: false,
   lastUpdated: true,
   themeConfig: {
+    outline: [1, 3],
     sidebar: defaultSidebar,
     nav: [
       {
