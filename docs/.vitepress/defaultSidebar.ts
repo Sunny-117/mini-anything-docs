@@ -26,6 +26,33 @@ export const defaultSidebar: DefaultTheme.Sidebar = [
         ],
     },
     {
+        text: 'Vue.js 生态',
+        collapsible: true,
+        items: [
+            {
+                text: '目录大纲',
+                link: '/vue-ecology/index',
+            },
+            {
+                text: 'vuex4',
+                link: '/vue-ecology/vuex4',
+            },
+            {
+                text: '100 行写一个 vuex',
+                link: '/vue-ecology/vuex3-100',
+            },
+            {
+                text: 'pinia',
+                link: '/vue-ecology/pinia',
+            },
+
+            {
+                text: '40 行写一个 pinia',
+                link: '/vue-ecology/pinia-100',
+            },
+        ],
+    },
+    {
         text: 'vue3',
         collapsible: true,
         items: [
