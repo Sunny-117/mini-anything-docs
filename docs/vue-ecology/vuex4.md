@@ -1,4 +1,4 @@
-# vuex4
+# vuex 4
 
 ## Vuex 是什么？
 
