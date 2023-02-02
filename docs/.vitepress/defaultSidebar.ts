@@ -34,6 +34,10 @@ export const defaultSidebar: DefaultTheme.Sidebar = [
         link: "/vue-ecology/index",
       },
       {
+        text: "create-vue 源码解析",
+        link: "/vue-ecology/create-vue",
+      },
+      {
         text: "vuex 4",
         link: "/vue-ecology/vuex4",
       },
