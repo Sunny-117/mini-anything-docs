@@ -43,23 +43,81 @@ Vue 官方已经不推荐使用 vue-cli 搭建工程，只对 vue-cli 进行 bug
 }
 ```
 
-接下来，我会一一介绍每一个包是做什么的
+接下来，我会介绍每一个包是做什么的
 
-- @types/eslint
-- @types/node
-- @types/prompts
+- `@types/eslint`
+- `@types/node`
+- `@types/prompts`
 
 以上三个以`@types`开头的包，都是 TypeScript 类型声明文件
 
-- @vue/create-eslint-config
-- @vue/tsconfig
-- esbuild
-- esbuild-plugin-license
-- husky
-- kolorist
-- lint-staged
-- minimist
-- npm-run-all
-- prettier
-- prompts
-- zx
+- [`@vue/create-eslint-config`](https://github.com/vuejs/create-eslint-config)
+
+Vue 官方的 eslint 插件，可以使用 ESLint 检查 SFC 中的`<template>` 和 `<script>` ，也的包含项目中的 js 文件
+
+- [`@vue/tsconfig`](https://github.com/vuejs/tsconfig)
+
+Vue3 项目的基本 tsconfig
+
+- [`esbuild`](https://esbuild.docschina.org/)
+
+构建工具，用 Go 编写，性能强大
+
+- `esbuild-plugin-license`
+
+用于向最终捆绑包添加许可横幅并输出第三方许
+可的 esbuild 插件
+
+- `husky`
+- `lint-staged`
+
+🚫💩 以上两款工具都是优化团队 git 提交工具
+
+- `kolorist`
+
+用来为命令行着色
+
+- `minimist`
+
+用来解析参数选项
+
+- `npm-run-all`
+
+用于并行或顺序运行多个 npm 脚本的 CLI 工具。
+
+- `prettier`
+
+代码格式化
+
+- `prompts`
+
+轻便、美观、用户友好的交互式提示
+
+![](https://github.com/terkelg/prompts/raw/master/media/example.gif)
+
+- [`zx`](https://github.com/google/zx)
+
+Google 出品的编写脚本的工具
+
+## 源码解读
+
+![](../public/vue/2023-02-02-13-35-36.png)
+
+进入到 create-vue 源码，核心代码是 index.ts。
+
+从初始化项目输出图来看。主要是三个步骤。
+
+1. 输入项目名称，默认值是 vue-project
+2. 询问一些配置 渲染模板等
+3. 完成创建项目，输出运行提示
+
+```js
+async function init() {
+  // core code
+}
+
+// async 函数返回的是Promise 可以用 catch 报错
+init().catch((e) => {
+  console.error(e);
+});
+```
